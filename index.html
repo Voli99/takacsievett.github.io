@@ -62,9 +62,10 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>BEMUTATKOZÁS</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>AKTUÁLIS HIRDETÉSEIM</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>ELÉRHETŐSÉGEK</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> BEMUTATKOZÁS</a>
+    <a href="#comments" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bars"></i> VISSZAJELZÉSEK</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> AKTUÁLIS HIRDETÉSEIM</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> ELÉRHETŐSÉGEK</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
     </a>
   </div>
@@ -72,6 +73,7 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">BEMUTATKOZÁS</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bars"></i> VISSZAJELZÉSEK</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">AKTUÁLIS HIRDETÉSEIM</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">ELÉRHETŐSÉGEK</a>
   </div>
@@ -86,7 +88,7 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <p>Takács Ivett vagyok, 14 éve dolgozom az ingatlanpiacon, ahol pályafutásomat újépítésű ingatlanok értékesítésével kezdtem. Az évek során számos sikeres tranzakciót bonyolítottam le ezen a területen, ami megalapozta szakmai hitelességemet. 
+  <p>Takács Ivett vagyok, 14 éve dolgozom az ingatlanpiacon, ahol pályafutásomat újépítésű ingatlanok értékesítésével kezdtem. Az évek során számos sikeres tranzakciót bonyolítottam le ezen a területen, amely megalapozta szakmai hitelességemet. 
     Az elmúlt években, mióta lányaim felnőttek, még több időt és energiát tudok szentelni munkámnak, így a nagyértékű ingatlanok felé is nyitottam. 
     Büszke vagyok arra, hogy ebben is jelentős sikereket értem el és szeretem, hogy munkám során különböző emberekkel találkozhatok, az ő igényeiknek megfelelő, valóban komplex szolgáltatást nyújtok, melynek a legjobb visszaigazolása az, hogy tovább ajánlanak</p>
   <div class="w3-row">
@@ -98,33 +100,52 @@ body, html {
       <p>Szolgáltatások, melyek munkámat segítik:</p>
         <ul>
         <li>Ingatlan piac elemzése</li>
-        <li>Bank független hitel tanácsadás</li>
+        <li>Bankfüggetlen hiteltanácsadás</li>
         <li>Home staging</li>
-        <li>Energetikai tanúsítvàny</li>
+        <li>Energetikai tanúsítvány</li>
       </ul>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Személyre szabott, gyors és rugalmas együttműködést ajánlok.</p>
+  <p class="w3-large w3-center w3-padding-16">Személyre szabott, gyors és rugalmas együttműködést kínálok.</p>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container ">
+<div class="bgimg-2 w3-display-container" id="comments">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-black w3-xlarge w3-wide w3-animate-opacity">VISSZAJELZÉSEK</span>
+  </div>
+</div>
+<!-- Container (Comments Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <div class="w3-row w3-padding-32 w3-section" style="display: flex; justify-content: space-between;">
+    <div class="w3-col m6 w3-container">
+      <img src="velemeny1.png" class="w3-image w3-round" style="width:100%; max-width: 150%;">
+    </div>
+    <div class="w3-col m6 w3-container">
+      <img src="velemeny2.png" class="w3-image w3-round" style="width:100%; max-width: 150%;">
+    </div>
+  </div>
+</div>
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container" id="portfolio">
   <div class="w3-display-middle">
     <span class="w3-center w3-black w3-xlarge w3-wide w3-animate-opacity">AKTUÁLIS HIRDETÉSEIM</span>
   </div>
 </div>
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <p class="w3-center"><em>Az alábbiakban található pár általam hirdetett ingatlan.<br> További részletekért kérem kattintson az adott ingatlanra vagy keressen a megadott elérhetőségek egyikén!</em></p><br>
+    <p class="w3-center"><em>Az alábbiakban található pár általam hirdetett ingatlan.<br> További részletekért kérem, kattintson az adott ingatlanra, vagy keressen a megadott elérhetőségek egyikén!</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-    <a href="https://www.oc.hu/uj-lakas/P3458" target="_blank">
-        <img src="house1.jpg" style="width:100%">
-        <p>Eladó ház: Budapest XII. kerület, Svábhegy -Istenhegy</p>
-    </a>
-    </div>
+      <a href="https://ingatlan.com/33814435" target="_blank">
+        <img src="house1.jpg" style="width:100%; max-width: 75%;" >
+        <p>Eladó ház: Budapest XXII. kerület, Ferenc utca</p>
+      </a>
+      </div>
 
     <div class="w3-col m3">
     <a href="https://www.oc.hu/ingatlanok/H475052" target="_blank">
@@ -139,19 +160,17 @@ body, html {
       <p>Eladó ház: Budapest XI. kerület, Kelenvölgy</p>
     </a>
     </div>
-
-    <div class="w3-col m3"><a href="https://www.oc.hu/ingatlanok/H484052" target="_blank">
-      <img src="house4.jpg" style="width:100%">
-      <p>Eladó lakás: Budapest XI. kerület, Kelenföld</p>
-    </a>
-    </div>
   </div>
 </div>
 
+<!-- Forth Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container ">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-black w3-xlarge w3-wide w3-animate-opacity">ELÉRHETŐSÉGEK</span>
+  </div>
+</div>
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">ELÉRHETŐSÉGEK</h3>
-
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
       <img src="ivett1.jpg" class="w3-image w3-round" style="width:100%">
@@ -172,8 +191,6 @@ body, html {
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
